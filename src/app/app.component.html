@@ -9,16 +9,12 @@
       Newsletter</a>
   <a [class.active]="selectedTopBar === 'info'" routerLink="/website-info" (click)="changeTopBarElement('info')">
     {{'barInformation' | translate}}</a>
-  <button type="button" (click)="changeLanguage('eng')" style="float:right">ENG</button>
+  <button id='btnEng' type="button" (click)="changeLanguage('eng')" style="float:right">ENG</button>
   <button type="button" (click)="changeLanguage('pl')" style="float:right">PL</button>
 </div>
 
 <div class="mainRow">
   <div class="sidebar">
-  <!--<a class="active" href="#" onclick="changeContent(1)">Top gierki</a>
-  <a href="#" onclick="changeContent(2)">Lista gier</a>
-  <a href="#" onclick="changeContent(3)">Element 3</a>
-  <a href="#" onclick="changeContent(4)">Element 4</a> -->
     <nav>
       <a [class.active]="selectedLeftBar === 'topGames'" routerLink="/top-games" (click)="changeTopBarElement('games'); changeLeftBarElement('topGames')"> {{'topGames' | translate}}</a>
       <a [class.active]="selectedLeftBar === 'gamesList'" routerLink="/games" (click)="changeTopBarElement('games'); changeLeftBarElement('gamesList')"> {{'gamesList' | translate}}</a>

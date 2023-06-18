@@ -16,7 +16,7 @@ export class TranslationService {
         siteTitle: "The Game Guru",
         subTitle: "A website where you can find the best games to play!",
         barMain: "Games",
-        barInformation: "Information",
+        barInformation: "Info",
         informationLine1: "We are a non profit website, we want to share the best games according to our evaluation and support indie games that deserve more attention.",
         informationLine2: "We do not own any of the games presented on this website. All rights go to their respectful owners.",
         informationLine3: "If you have any questions, don't hesitate to contact us at 555-555555 or at totallyRealMail@mail.com",
