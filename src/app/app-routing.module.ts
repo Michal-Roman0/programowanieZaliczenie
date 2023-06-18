@@ -7,7 +7,7 @@ import { WebsiteInfoComponent } from './website-info/website-info.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 
 const routes: Routes = [
-  //{path: '', redirectTo: '/top-games', pathMatch: 'full' },
+  {path: '', redirectTo: '/top-games', pathMatch: 'full' },
   {path: 'games', component: GamesComponent},
   {path: 'top-games', component: TopGamesComponent},
   {path: 'random-game', component: RandomGameComponent},
