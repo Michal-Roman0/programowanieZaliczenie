@@ -1,0 +1,11 @@
+<div class="column">
+    <div class="row">
+      <div style="float:left;">
+        <h2>{{'randomGameTitle' | translate}}</h2>
+        <button type="button" (click)="onRandomize()">{{'randomGameBtn' | translate}}</button>
+      </div>
+    </div>
+    <div class="row">
+        <app-game-info [game]="selectedGame"></app-game-info>
+    </div>
+</div>

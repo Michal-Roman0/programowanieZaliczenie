@@ -1,0 +1,12 @@
+<div class="column">
+    <div class="row">
+      <div style="float:left;">
+        <h2>{{'newsletterTitle' | translate}}</h2>
+      </div>
+    </div>
+    <label for="news-mail">E-mail:</label>
+    <input id="news-mail" #email />
+
+    <button type="button" class = "mail-button" (click)="addEmail(email.value); email.value = '';"> {{'newsletterBtn' | translate}} </button>
+    <p *ngIf="savedEmail">{{savedEmail}} {{'newsletterMailAdded' | translate}}</p>
+</div>

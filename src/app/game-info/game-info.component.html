@@ -1,0 +1,10 @@
+<div *ngIf="game">
+    <h2>{{game.title | uppercase}}:</h2>
+    <img class="images" src={{game.imageLink}}>
+    <p><b>{{'producer' | translate}}</b> {{game.producer}}</p>
+    <p><b>{{'genre' | translate}}</b> {{game.genre}}</p>
+    <p><b>{{'release' | translate}}</b> {{game.release}}</p>
+    <p *ngIf="translationService.language==='eng'"><b>{{'description' | translate}}</b> {{game.descriptionEN}}</p>
+    <p *ngIf="translationService.language==='pl'"><b>{{'description' | translate}}</b> {{game.descriptionPL}}</p>
+    <p><b>{{'steamLink' | translate}}</b> <a href={{game.steamLink}}> {{game.title}}</a></p>
+</div>
